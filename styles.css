@@ -235,6 +235,24 @@ ul li a:hover {
         grid-template-columns: 1fr;
     }
 
+    .section__container.about {
+        display: flex; 
+        flex-direction: row; 
+        align-items: center; 
+        justify-content: center; 
+        gap: 2rem; 
+    }
+    
+    .section__container.about .content {
+        text-align: left; /* Buat teks rata kiri */
+    }
+    
+    .section__container.about .image img {
+        width: min(20rem, 80%);
+        border-radius: 100%; /* Tetap dengan gambar bulat */
+    }
+    
+
     .image {
         grid-area: 1/1/2/2;
     }

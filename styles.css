@@ -172,12 +172,103 @@ body {
   background-color: var(--white);
 }
 
-.section__container.about {
-    display: flex; 
-    flex-direction: row; 
-    align-items: center; 
-    justify-content: center; 
-    gap: 2rem; 
+.about .content h1 {
+  font-size: 2.5rem;
+  color: var(--white);
+  background-image: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem; 
+  text-align: left;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* Jarak antara gambar dan teks */
+  padding: 2rem;
+  /* Hilangkan background-color dan box-shadow */
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.about .image img {
+  max-width: 200px; /* Ukuran gambar */
+  height: auto;
+  border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+  overflow: hidden;
+  border: 5px solid var(--primary-color-light); /* Tambahkan border agar tetap elegan */
+  box-shadow: none; /* Hilangkan bayangan jika tidak diperlukan */
+}
+
+.about .content {
+  flex: 2; /* Memberikan proporsi pada teks */
+  color: var(--primary-color-light);
+  text-align: left;
+}
+
+.about .content h1 {
+  font-size: 2.5rem;
+  color: var(--white);
+  background-image: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.about .content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--primary-color-light);
+  margin-bottom: 0;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column; /* Gambar dan teks ditumpuk */
+    text-align: center;
+  }
+
+  .about .image img {
+    max-width: 150px; /* Ukuran gambar lebih kecil */
+  }
+
+  .about .content {
+    text-align: center;
+  }
+}
+
+.about .content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--primary-color-light);
+  margin-top: 1rem; 
+  margin-bottom: 2rem; 
+}
+
+.skill__container h2 {
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+}
+
+.skill__flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.skill__flex span {
+  font-size: 2.5rem;
+  background: var(--gradient-2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .skill__container {

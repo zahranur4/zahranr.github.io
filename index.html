@@ -1,85 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>Portofolio Personal Branding</title>
-</head>
-<body>
+    <title>Personal Branding Portofolio</title>
+  </head>
+  <body>
     <nav>
-        <div class="nav__content">
-            <div class="logo"><a href="#">ZAHRANURA</a></div>
-            <label for="check" class="checkbox">
-                <i class="ri-menu-line"></i>
-            </label>
-            <input type="checkbox" name="checkbox" id="check">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Language</a></li>
-                <li><a href="#">Project</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+      <div class="nav__bar">
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#">ZAHRANURA</a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
         </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#experience">Experiences</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-    <section class="section">
-        <div class="section__container">
-            <div class="content">
-                <p class="subtitle">Hello</p>
-                <h1 class="title">
-                    I'm <span>ZAHRANURA<br>a</span> Newbie Programmer
-                </h1>
-                <p class="description">
-                    Welcome to my personal website! I'm a newbie programmer who loves to learn and explore new things.
-                </p>
-                <div class="action__btns">
-                    <button class="my__cv" onclick="openPopup()">My CV</button>
-                </div>
-            </div>
-            <div class="image">
-                <img src="img/fotoporto.png" alt="profile" />
-            </div>
-        </div>
+    <header class="section__container header__container" id="home">
+      <img src="assets/fotoporto.png" alt="header" />
+      <h1>hi!<br /><span>i'm zahranura.</span></h1>
+      <p>
+        welcome to my personal website! i'm a newbie programmer who loves to learn and explore new things.
+      </p>
+      <div class="header__btns">
+        <button class="btn">Contact Me</button>
+        <a href="assets/Curriculum Vitae Zahra.jpg" download>My CV</a>
+      </div>
+    </header>
+
+    <section class="section__container skill__container">
+      <h2>i use</h2>
+      <ul class="skill__flex">
+        <li>
+          <span><i class="ri-javascript-fill"></i></span>
+        </li>
+        <li>
+          <span><i class="ri-html5-fill"></i></span>
+        </li>
+        <li>
+          <span><i class="ri-php-line"></i></span>
+        </li>
+        <li>
+          <span><i class="ri-reactjs-line"></i></span>
+        </li>
+      </ul>
     </section>
 
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <iframe src="img/Curriculum Vitae Zahra.jpg" width="100%" height="500px"></iframe>
-            <button class="close-popup" onclick="closePopup()">Close</button>
-        </div>
-    </div>
-
-    <script>
-        function openPopup() {
-            document.getElementById('popup').style.display = 'flex';
-        }
-
-        function closePopup() {
-            document.getElementById('popup').style.display = 'none';
-        }
-    </script>
-
-    <section class="section">
-        <div class="section__container about">
-            <div class="image">
-             <img src="img/fotoporto2.png" alt="profile" />
+    <section class="section__container project__container" id="project">
+      <h2>PROJECTS</h2>
+      <div class="project__grid">
+        <div class="project__card">
+          <img src="assets/project-1.jpg" alt="project" />
+          <div class="project__card__details">
+            <div>
+              <p>a</p>
+              <h4>b</h4>
             </div>
-        <div class="content">
-            <p class="subtitle"></p>
-            <h1 class="About">
-                <span>ABOUT<br></span>
-            </h1>
-            <p class="description">
-                I am a student of the University of Logistics and International Business majoring in D4 Informatics Engineering. I am a sociable person and can adapt to a new environment.
-            </p>
+            <a href="#"><i class="ri-arrow-right-up-line"></i></a>
+          </div>
         </div>
-    </div>
-</section>
+        <div class="project__card">
+          <img src="assets/project-2.jpg" alt="project" />
+          <div class="project__card__details">
+            <div>
+              <p>a</p>
+              <h4>b</h4>
+            </div>
+            <a href="#"><i class="ri-arrow-right-up-line"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section__container experience__container" id="experience">
+      <h2>EXPERIENCE</h2>
+      <ul class="experience__list">
+        <li>
+          <div class="experience__header">
+            <div>
+              <img src="assets/search.png" alt="google" />
+              <h4>a</h4>
+            </div>
+            <p>Nov 2022 - Present</p>
+          </div>
+          <p>
+            aaaaaa
+          </p>
+        </li>
+        <li>
+          <div class="experience__header">
+            <div>
+              <img src="assets/apple.png" alt="apple" />
+              <h4>b</h4>
+            </div>
+            <p>Apr 2020 - Nov 2022</p>
+          </div>
+          <p>
+            bbbbbb
+          </p>
+        </li>
+        <li>
+          <div class="experience__header">
+            <div>
+              <img src="assets/meta.png" alt="meta" />
+              <h4>c</h4>
+            </div>
+            <p>Jan 2018 - Apr 2020</p>
+          </div>
+          <p>
+            ccccccc
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <div class="section__container footer__container" id="contact">
+        <h2>Contact</h2>
+        <p>
+          I'd love to hear from you! Whether you have a project in mind, a
+          question about my work, or just want to connect, feel free to reach
+          out. You can contact me via email or through my social media channels.
+          I am always excited to collaborate with like-minded individuals and
+          explore new opportunities.
+        </p>
+        <div class="mail__to">
+          <a href="#">
+            <span><i class="ri-mail-line"></i></span>
+            zzahranuraa@gmail.com
+          </a>
         </div>
-    </section></section>
-</body>
+        <ul class="footer__socials">
+          <li>
+            <a href="#"><i class="ri-google-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-twitter-x-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
 </html>

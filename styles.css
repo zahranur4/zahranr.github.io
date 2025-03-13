@@ -108,10 +108,13 @@ body {
 }
 
 .header__container img {
-  max-width: 200px;
-  margin-inline: auto;
-  margin-bottom: 2rem;
-}
+    max-width: 200px;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    overflow: hidden; /* Memastikan elemen di dalam lingkaran */
+    border: 5px solid var(--primary-color-light); /* Opsional: Tambahkan border elegan */
+  }
 
 .header__container h1 {
   margin-bottom: 2rem;
@@ -167,6 +170,14 @@ body {
 .header__btns a:hover {
   color: var(--primary-color-dark);
   background-color: var(--white);
+}
+
+.section__container.about {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 2rem; 
 }
 
 .skill__container {

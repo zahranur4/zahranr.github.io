@@ -172,59 +172,55 @@ body {
   background-color: var(--white);
 }
 
-.about .content h1 {
-  font-size: 2.5rem;
-  color: var(--white);
-  background-image: var(--gradient-1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 1.5rem; 
-  text-align: left;
-}
-
 .about {
   display: flex;
+  flex-direction: column; 
   align-items: center;
+  gap: 2rem; 
   justify-content: center;
-  gap: 2rem; /* Jarak antara gambar dan teks */
   padding: 2rem;
-  /* Hilangkan background-color dan box-shadow */
   background-color: transparent;
   box-shadow: none;
 }
 
-.about .image img {
-  max-width: 200px; /* Ukuran gambar */
-  height: auto;
-  border-radius: 50%; /* Membuat gambar menjadi lingkaran */
-  overflow: hidden;
-  border: 5px solid var(--primary-color-light); /* Tambahkan border agar tetap elegan */
-  box-shadow: none; /* Hilangkan bayangan jika tidak diperlukan */
-}
-
-.about .content {
-  flex: 2; /* Memberikan proporsi pada teks */
-  color: var(--primary-color-light);
+.about .content h1 {
+  font-size: 3.5rem; 
+  line-height: 4rem;
+  background-image: var(--gradient-1);
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem; 
+  -webkit-background-clip: text;
   text-align: left;
 }
 
-.about .content h1 {
-  font-size: 2.5rem;
-  color: var(--white);
-  background-image: var(--gradient-1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 1rem;
+.about .image img {
+  max-width: 200px; 
+  height: auto;
+  border-radius: 50%; 
+  border: 5px solid var(--primary-color-light);
+  overflow: hidden;
+  box-shadow: none;
 }
 
 .about .content p {
   font-size: 1rem;
   line-height: 1.6;
   color: var(--primary-color-light);
+  text-align: center;
+  max-width: 600px;
   margin-bottom: 0;
 }
 
-/* Responsif untuk layar kecil */
+.about .content {
+  flex: 2; 
+  color: var(--primary-color-light);
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--primary-color-light);
+  margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
   .about {
     flex-direction: column; /* Gambar dan teks ditumpuk */

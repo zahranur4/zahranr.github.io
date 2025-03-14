@@ -240,25 +240,23 @@ body {
   }
 }
 
-/* Gaya untuk ABOUT, PROJECTS, EXPERIENCE */
 .about .content h1,
 .project__container h2,
 .experience__container h2 {
-  font-size: 3.5rem; /* Ukuran sama seperti "I'm Zahranura" */
-  line-height: 4rem; /* Menyelaraskan tinggi baris */
-  background-image: var(--gradient-1); /* Gradasi warna yang sama */
+  font-size: 3.5rem; 
+  line-height: 4rem; 
+  background-image: var(--gradient-1); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: center; /* Sesuaikan posisi */
-  margin-bottom: 2rem; /* Jarak dengan elemen di bawahnya */
+  text-align: center; 
+  margin-bottom: 2rem; 
 }
 
-/* Responsivitas untuk layar kecil */
 @media (max-width: 768px) {
   .about .content h1,
   .project__container h2,
   .experience__container h2 {
-    font-size: 2.5rem; /* Ukuran lebih kecil di layar kecil */
+    font-size: 2.5rem; 
     line-height: 3rem;
   }
 }
@@ -271,39 +269,16 @@ body {
   margin-bottom: 2rem; 
 }
 
-.skill__container h2 {
-  margin-bottom: 3rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--white);
-  text-align: center;
-}
-
-.skill__flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.skill__flex span {
-  font-size: 2.5rem;
-  background: var(--gradient-2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .skill__container {
   padding-block: 0;
 }
 
 .skill__container h2 {
   margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: 2px;
-  background: var(--gradient-2);
+  background: var(--gradient-1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -311,24 +286,22 @@ body {
 
 .skill__flex {
   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
 }
 
 .skill__flex span {
-  font-size: 2.5rem;
-  background: var(--gradient-2);
+  font-size: 4rem;
+  background: var(--gradient-1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .project__container h2 {
   margin-bottom: 4rem;
-  font-size: 2rem;
   font-weight: 700;
-  var(--primary-color-dark);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -372,9 +345,7 @@ body {
 
 .experience__container h2 {
   margin-bottom: 4rem;
-  font-size: 2rem;
   font-weight: 700;
-    var(--primary-color-dark);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -498,10 +469,6 @@ footer {
     background-color: transparent;
     transform: none;
     z-index: 1;
-  }
-
-  .skill__flex {
-    gap: 2rem;
   }
 
   .project__grid {

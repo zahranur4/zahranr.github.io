@@ -289,10 +289,11 @@ body {
 }
 
 .skill__flex span {
-  font-size: 4rem;
+  font-size: 5rem;
   background: var(--gradient-1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
 .project__container h2 {

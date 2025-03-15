@@ -155,6 +155,7 @@ body {
   border-radius: 5rem;
   transition: 0.3s;
   cursor: pointer;
+  text-align: center;
 }
 
 .header__btns a {

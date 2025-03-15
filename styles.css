@@ -476,40 +476,4 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .experience__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Mengatur grid responsif */
-    gap: 2rem;
-  }
-  
-  .experience__card {
-    background-color: var(--primary-color);
-    border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk tampilan profesional */
-    max-width: 450px;
-    margin-inline: auto;
-  }
-  
-  .experience__card img {
-    width: 100%;
-    border-radius: 1rem 1rem 0 0; /* Membulatkan sudut atas gambar */
-  }
-  
-  .experience__card__details {
-    padding: 1rem;
-    text-align: center; /* Menyesuaikan tampilan dengan align tengah */
-  }
-  
-  .experience__card__details p {
-    color: var(--primary-color-light);
-    margin-bottom: 0.5rem;
-  }
-  
-  .experience__card__details h4 {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--white);
-  }
-
 }

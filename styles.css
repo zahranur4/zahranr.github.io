@@ -316,6 +316,8 @@ body {
   overflow: hidden;
 }
 
+.project__card.figms
+
 .project__card__details {
   padding: 1rem;
   display: flex;

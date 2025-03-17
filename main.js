@@ -20,6 +20,13 @@ const scrollRevealOption = {
   duration: 1000,
 };
 
+ScrollReveal().reveal(".project__container h2", {
+  ...scrollRevealOption,
+  origin: "bottom",
+  delay: 500,
+});
+
+
 ScrollReveal().reveal(".skill__container h2, .skill__flex span", {
   ...scrollRevealOption,
   interval: 500, 

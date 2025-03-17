@@ -20,6 +20,23 @@ const scrollRevealOption = {
   duration: 1000,
 };
 
+ScrollReveal().reveal(".skill__container h2, .skill__flex span", {
+  ...scrollRevealOption,
+  interval: 500, 
+});
+
+ScrollReveal().reveal(".about .image img", {
+  ...scrollRevealOption,
+  origin: "bottom", 
+  delay: 500,
+});
+
+ScrollReveal().reveal(".about .content p", {
+  ...scrollRevealOption,
+  origin: "bottom", 
+  delay: 1000,
+});
+
 ScrollReveal().reveal(".header__container img", {
   ...scrollRevealOption,
 });
@@ -35,6 +52,9 @@ ScrollReveal().reveal(".header__btns", {
   ...scrollRevealOption,
   delay: 1500,
 });
+ScrollReveal().reveal(".skill__container h2", {
+  ...scrollRevealOption,
+  });
 
 ScrollReveal().reveal(".project__card", {
   ...scrollRevealOption,

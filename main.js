@@ -72,3 +72,4 @@ ScrollReveal().reveal(".experience__list li", {
   ...scrollRevealOption,
   interval: 500,
 });
+

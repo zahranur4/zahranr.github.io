@@ -72,19 +72,3 @@ ScrollReveal().reveal(".experience__list li", {
   ...scrollRevealOption,
   interval: 500,
 });
-
-ScrollReveal().reveal(".footer__container h2", {
-  ...scrollRevealOption,
-});
-ScrollReveal().reveal(".footer__container p", {
-  ...scrollRevealOption,
-  delay: 500,
-});
-ScrollReveal().reveal(".footer__container .mail__to", {
-  ...scrollRevealOption,
-  delay: 1000,
-});
-ScrollReveal().reveal(".footer__socials", {
-  ...scrollRevealOption,
-  delay: 1500,
-});

@@ -73,3 +73,11 @@ ScrollReveal().reveal(".experience__list li", {
   interval: 500,
 });
 
+ScrollReveal().reveal(".footer__container h2", {
+  ...scrollRevealOption,
+});
+ScrollReveal().reveal(".footer__container p", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+

@@ -76,8 +76,15 @@ ScrollReveal().reveal(".experience__list li", {
 ScrollReveal().reveal(".footer__container h2", {
   ...scrollRevealOption,
 });
+
 ScrollReveal().reveal(".footer__container p", {
   ...scrollRevealOption,
   delay: 500,
+});
+
+ScrollReveal().reveal(".project__card", {
+  ...scrollRevealOption,
+  interval: 300,
+  mobile: true,
 });
 

@@ -7,8 +7,6 @@
   --white: #ffffff;
   --max-width: 900px;
   --gradient-1: linear-gradient(to right bottom, #3498db, #2ecc71);
-    var(--white) 25%,
-    #3498db;
 }
 
 html {

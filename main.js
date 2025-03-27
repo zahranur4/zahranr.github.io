@@ -88,3 +88,9 @@ ScrollReveal().reveal(".project__card", {
   mobile: true,
 });
 
+ScrollReveal().reveal(".skills__card", {
+  distance: "50px",
+  origin: "bottom",
+  interval: 300,
+});
+

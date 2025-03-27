@@ -11,6 +11,10 @@
     #3498db;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -168,6 +172,17 @@ body {
 .header__btns a:hover {
   color: var(--primary-color-dark);
   background-color: var(--white);
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project__card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
 }
 
 .about {

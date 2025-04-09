@@ -94,3 +94,8 @@ ScrollReveal().reveal(".skills__card", {
   interval: 300,
 });
 
+document.querySelector(".btn").addEventListener("click", (e) => {
+  e.preventDefault(); 
+  document.querySelector("#contact").scrollIntoView({ behavior: "smooth" });
+});
+
